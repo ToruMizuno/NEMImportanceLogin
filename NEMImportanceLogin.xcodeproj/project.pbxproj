@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48146D2D24F38C5338483B8F /* Pods_NEMImportanceLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F09687769854CB2D05A076 /* Pods_NEMImportanceLogin.framework */; };
+		563B151D298F90E3180DB166 /* Pods_NEMImportanceLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3B67112F0C8B5D342F972E /* Pods_NEMImportanceLoginUITests.framework */; };
+		65B9BFDF9FBDAF035FAF49B5 /* Pods_NEMImportanceLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D04442444975528C8CB8E99 /* Pods_NEMImportanceLoginTests.framework */; };
+		6708163A203272BF00FDEF37 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67081639203272BF00FDEF37 /* StartViewController.swift */; };
+		6710CA25202FF56A00671D5D /* LoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710CA24202FF56A00671D5D /* LoginEmailViewController.swift */; };
+		6710CA27202FF5C500671D5D /* LoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710CA26202FF5C500671D5D /* LoginPasswordViewController.swift */; };
+		6710CA2A202FF7CD00671D5D /* SignupEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710CA29202FF7CD00671D5D /* SignupEmailViewController.swift */; };
+		6710CA2C202FF7FF00671D5D /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710CA2B202FF7FF00671D5D /* SignupPasswordViewController.swift */; };
+		6710CA2E202FF85000671D5D /* SignupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710CA2D202FF85000671D5D /* SignupProfileViewController.swift */; };
+		67B3448D202F7D9B0065142C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B3448C202F7D9B0065142C /* AppDelegate.swift */; };
+		67B3448F202F7D9B0065142C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B3448E202F7D9B0065142C /* ViewController.swift */; };
+		67B34492202F7D9B0065142C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B34490202F7D9B0065142C /* Main.storyboard */; };
+		67B34494202F7D9B0065142C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B34493202F7D9B0065142C /* Assets.xcassets */; };
+		67B34497202F7D9B0065142C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B34495202F7D9B0065142C /* LaunchScreen.storyboard */; };
+		67B344A2202F7D9B0065142C /* NEMImportanceLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B344A1202F7D9B0065142C /* NEMImportanceLoginTests.swift */; };
+		67B344AD202F7D9C0065142C /* NEMImportanceLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B344AC202F7D9C0065142C /* NEMImportanceLoginUITests.swift */; };
+		67B344BA202F7FE60065142C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B344BB202F7FE60065142C /* Alamofire.framework */; };
+		67B344BC202F7FEB0065142C /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B344BD202F7FEB0065142C /* NCMB.framework */; };
+		67B344BE202F7FF00065142C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B344BF202F7FF00065142C /* SwiftyJSON.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67B3449E202F7D9B0065142C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B34481202F7D9B0065142C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B34488202F7D9B0065142C;
+			remoteInfo = NEMImportanceLogin;
+		};
+		67B344A9202F7D9C0065142C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B34481202F7D9B0065142C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B34488202F7D9B0065142C;
+			remoteInfo = NEMImportanceLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D04442444975528C8CB8E99 /* Pods_NEMImportanceLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEMImportanceLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		175D5545D74D0378FEA294DE /* Pods-NEMImportanceLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEMImportanceLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEMImportanceLoginTests/Pods-NEMImportanceLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26028E499CB8B6E1BFD7C92C /* Pods-NEMImportanceLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEMImportanceLoginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEMImportanceLoginUITests/Pods-NEMImportanceLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41331D128FCDCE543A1D01E2 /* Pods-NEMImportanceLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEMImportanceLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-NEMImportanceLogin/Pods-NEMImportanceLogin.release.xcconfig"; sourceTree = "<group>"; };
+		67081639203272BF00FDEF37 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		6710CA24202FF56A00671D5D /* LoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailViewController.swift; sourceTree = "<group>"; };
+		6710CA26202FF5C500671D5D /* LoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordViewController.swift; sourceTree = "<group>"; };
+		6710CA29202FF7CD00671D5D /* SignupEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewController.swift; sourceTree = "<group>"; };
+		6710CA2B202FF7FF00671D5D /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
+		6710CA2D202FF85000671D5D /* SignupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupProfileViewController.swift; sourceTree = "<group>"; };
+		67B34489202F7D9B0065142C /* NEMImportanceLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEMImportanceLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B3448C202F7D9B0065142C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67B3448E202F7D9B0065142C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67B34491202F7D9B0065142C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67B34493202F7D9B0065142C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67B34496202F7D9B0065142C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67B34498202F7D9B0065142C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B3449D202F7D9B0065142C /* NEMImportanceLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEMImportanceLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B344A1202F7D9B0065142C /* NEMImportanceLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEMImportanceLoginTests.swift; sourceTree = "<group>"; };
+		67B344A3202F7D9B0065142C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B344A8202F7D9C0065142C /* NEMImportanceLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEMImportanceLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B344AC202F7D9C0065142C /* NEMImportanceLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEMImportanceLoginUITests.swift; sourceTree = "<group>"; };
+		67B344AE202F7D9C0065142C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B344BB202F7FE60065142C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B344BD202F7FEB0065142C /* NCMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NCMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B344BF202F7FF00065142C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		778CF30C03DF667ECF414CCF /* Pods-NEMImportanceLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEMImportanceLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NEMImportanceLoginTests/Pods-NEMImportanceLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		92D6A61B4B5B3FFB36DB9B45 /* Pods-NEMImportanceLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEMImportanceLoginUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NEMImportanceLoginUITests/Pods-NEMImportanceLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A2FA9B8DC2EEC0780E0D1F6 /* Pods-NEMImportanceLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEMImportanceLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEMImportanceLogin/Pods-NEMImportanceLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		AC3B67112F0C8B5D342F972E /* Pods_NEMImportanceLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEMImportanceLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F09687769854CB2D05A076 /* Pods_NEMImportanceLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEMImportanceLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67B34486202F7D9B0065142C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B344BE202F7FF00065142C /* SwiftyJSON.framework in Frameworks */,
+				67B344BC202F7FEB0065142C /* NCMB.framework in Frameworks */,
+				67B344BA202F7FE60065142C /* Alamofire.framework in Frameworks */,
+				48146D2D24F38C5338483B8F /* Pods_NEMImportanceLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B3449A202F7D9B0065142C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B9BFDF9FBDAF035FAF49B5 /* Pods_NEMImportanceLoginTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B344A5202F7D9C0065142C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563B151D298F90E3180DB166 /* Pods_NEMImportanceLoginUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082F13125D9C909A05AD7311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67B344BF202F7FF00065142C /* SwiftyJSON.framework */,
+				67B344BD202F7FEB0065142C /* NCMB.framework */,
+				67B344BB202F7FE60065142C /* Alamofire.framework */,
+				D1F09687769854CB2D05A076 /* Pods_NEMImportanceLogin.framework */,
+				0D04442444975528C8CB8E99 /* Pods_NEMImportanceLoginTests.framework */,
+				AC3B67112F0C8B5D342F972E /* Pods_NEMImportanceLoginUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12B2EDA21705734DB396820F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FA9B8DC2EEC0780E0D1F6 /* Pods-NEMImportanceLogin.debug.xcconfig */,
+				41331D128FCDCE543A1D01E2 /* Pods-NEMImportanceLogin.release.xcconfig */,
+				175D5545D74D0378FEA294DE /* Pods-NEMImportanceLoginTests.debug.xcconfig */,
+				778CF30C03DF667ECF414CCF /* Pods-NEMImportanceLoginTests.release.xcconfig */,
+				26028E499CB8B6E1BFD7C92C /* Pods-NEMImportanceLoginUITests.debug.xcconfig */,
+				92D6A61B4B5B3FFB36DB9B45 /* Pods-NEMImportanceLoginUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6710CA28202FF78F00671D5D /* login */ = {
+			isa = PBXGroup;
+			children = (
+				6710CA24202FF56A00671D5D /* LoginEmailViewController.swift */,
+				6710CA26202FF5C500671D5D /* LoginPasswordViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		6710CA2F202FF87200671D5D /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				6710CA29202FF7CD00671D5D /* SignupEmailViewController.swift */,
+				6710CA2B202FF7FF00671D5D /* SignupPasswordViewController.swift */,
+				6710CA2D202FF85000671D5D /* SignupProfileViewController.swift */,
+			);
+			path = signup;
+			sourceTree = "<group>";
+		};
+		67B34480202F7D9B0065142C = {
+			isa = PBXGroup;
+			children = (
+				67B3448B202F7D9B0065142C /* NEMImportanceLogin */,
+				67B344A0202F7D9B0065142C /* NEMImportanceLoginTests */,
+				67B344AB202F7D9C0065142C /* NEMImportanceLoginUITests */,
+				67B3448A202F7D9B0065142C /* Products */,
+				12B2EDA21705734DB396820F /* Pods */,
+				082F13125D9C909A05AD7311 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67B3448A202F7D9B0065142C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67B34489202F7D9B0065142C /* NEMImportanceLogin.app */,
+				67B3449D202F7D9B0065142C /* NEMImportanceLoginTests.xctest */,
+				67B344A8202F7D9C0065142C /* NEMImportanceLoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67B3448B202F7D9B0065142C /* NEMImportanceLogin */ = {
+			isa = PBXGroup;
+			children = (
+				67B3448C202F7D9B0065142C /* AppDelegate.swift */,
+				67081639203272BF00FDEF37 /* StartViewController.swift */,
+				67B3448E202F7D9B0065142C /* ViewController.swift */,
+				6710CA2F202FF87200671D5D /* signup */,
+				6710CA28202FF78F00671D5D /* login */,
+				67B34490202F7D9B0065142C /* Main.storyboard */,
+				67B34493202F7D9B0065142C /* Assets.xcassets */,
+				67B34495202F7D9B0065142C /* LaunchScreen.storyboard */,
+				67B34498202F7D9B0065142C /* Info.plist */,
+			);
+			path = NEMImportanceLogin;
+			sourceTree = "<group>";
+		};
+		67B344A0202F7D9B0065142C /* NEMImportanceLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				67B344A1202F7D9B0065142C /* NEMImportanceLoginTests.swift */,
+				67B344A3202F7D9B0065142C /* Info.plist */,
+			);
+			path = NEMImportanceLoginTests;
+			sourceTree = "<group>";
+		};
+		67B344AB202F7D9C0065142C /* NEMImportanceLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67B344AC202F7D9C0065142C /* NEMImportanceLoginUITests.swift */,
+				67B344AE202F7D9C0065142C /* Info.plist */,
+			);
+			path = NEMImportanceLoginUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67B34488202F7D9B0065142C /* NEMImportanceLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B344B1202F7D9C0065142C /* Build configuration list for PBXNativeTarget "NEMImportanceLogin" */;
+			buildPhases = (
+				3D0F7CD599B12CC007372577 /* [CP] Check Pods Manifest.lock */,
+				67B34485202F7D9B0065142C /* Sources */,
+				67B34486202F7D9B0065142C /* Frameworks */,
+				67B34487202F7D9B0065142C /* Resources */,
+				8247905BA8EF9DC6A5D483DF /* [CP] Embed Pods Frameworks */,
+				8C2E218BDBF68FC16A5CA547 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEMImportanceLogin;
+			productName = NEMImportanceLogin;
+			productReference = 67B34489202F7D9B0065142C /* NEMImportanceLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67B3449C202F7D9B0065142C /* NEMImportanceLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B344B4202F7D9C0065142C /* Build configuration list for PBXNativeTarget "NEMImportanceLoginTests" */;
+			buildPhases = (
+				6338DB492B6A580B0E8C0A5E /* [CP] Check Pods Manifest.lock */,
+				67B34499202F7D9B0065142C /* Sources */,
+				67B3449A202F7D9B0065142C /* Frameworks */,
+				67B3449B202F7D9B0065142C /* Resources */,
+				B37A06197F2DE3CFFE347B2B /* [CP] Embed Pods Frameworks */,
+				6A37454389B6D29CA19F6A20 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B3449F202F7D9B0065142C /* PBXTargetDependency */,
+			);
+			name = NEMImportanceLoginTests;
+			productName = NEMImportanceLoginTests;
+			productReference = 67B3449D202F7D9B0065142C /* NEMImportanceLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67B344A7202F7D9C0065142C /* NEMImportanceLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B344B7202F7D9C0065142C /* Build configuration list for PBXNativeTarget "NEMImportanceLoginUITests" */;
+			buildPhases = (
+				1A912CC59C0F1CDE0BFA05CA /* [CP] Check Pods Manifest.lock */,
+				67B344A4202F7D9C0065142C /* Sources */,
+				67B344A5202F7D9C0065142C /* Frameworks */,
+				67B344A6202F7D9C0065142C /* Resources */,
+				5F94D31AFA0A79D6AE519D4E /* [CP] Embed Pods Frameworks */,
+				302FC16CCB624DC9FD55DC18 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B344AA202F7D9C0065142C /* PBXTargetDependency */,
+			);
+			name = NEMImportanceLoginUITests;
+			productName = NEMImportanceLoginUITests;
+			productReference = 67B344A8202F7D9C0065142C /* NEMImportanceLoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67B34481202F7D9B0065142C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Toru Mizuno";
+				TargetAttributes = {
+					67B34488202F7D9B0065142C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					67B3449C202F7D9B0065142C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 67B34488202F7D9B0065142C;
+					};
+					67B344A7202F7D9C0065142C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 67B34488202F7D9B0065142C;
+					};
+				};
+			};
+			buildConfigurationList = 67B34484202F7D9B0065142C /* Build configuration list for PBXProject "NEMImportanceLogin" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67B34480202F7D9B0065142C;
+			productRefGroup = 67B3448A202F7D9B0065142C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67B34488202F7D9B0065142C /* NEMImportanceLogin */,
+				67B3449C202F7D9B0065142C /* NEMImportanceLoginTests */,
+				67B344A7202F7D9C0065142C /* NEMImportanceLoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67B34487202F7D9B0065142C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B34497202F7D9B0065142C /* LaunchScreen.storyboard in Resources */,
+				67B34494202F7D9B0065142C /* Assets.xcassets in Resources */,
+				67B34492202F7D9B0065142C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B3449B202F7D9B0065142C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B344A6202F7D9C0065142C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A912CC59C0F1CDE0BFA05CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		302FC16CCB624DC9FD55DC18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEMImportanceLoginUITests/Pods-NEMImportanceLoginUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D0F7CD599B12CC007372577 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F94D31AFA0A79D6AE519D4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEMImportanceLoginUITests/Pods-NEMImportanceLoginUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6338DB492B6A580B0E8C0A5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A37454389B6D29CA19F6A20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEMImportanceLoginTests/Pods-NEMImportanceLoginTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8247905BA8EF9DC6A5D483DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEMImportanceLogin/Pods-NEMImportanceLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C2E218BDBF68FC16A5CA547 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEMImportanceLogin/Pods-NEMImportanceLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37A06197F2DE3CFFE347B2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NEMImportanceLoginTests/Pods-NEMImportanceLoginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67B34485202F7D9B0065142C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6710CA2A202FF7CD00671D5D /* SignupEmailViewController.swift in Sources */,
+				6708163A203272BF00FDEF37 /* StartViewController.swift in Sources */,
+				6710CA2C202FF7FF00671D5D /* SignupPasswordViewController.swift in Sources */,
+				6710CA25202FF56A00671D5D /* LoginEmailViewController.swift in Sources */,
+				6710CA2E202FF85000671D5D /* SignupProfileViewController.swift in Sources */,
+				6710CA27202FF5C500671D5D /* LoginPasswordViewController.swift in Sources */,
+				67B3448F202F7D9B0065142C /* ViewController.swift in Sources */,
+				67B3448D202F7D9B0065142C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B34499202F7D9B0065142C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B344A2202F7D9B0065142C /* NEMImportanceLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B344A4202F7D9C0065142C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B344AD202F7D9C0065142C /* NEMImportanceLoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67B3449F202F7D9B0065142C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B34488202F7D9B0065142C /* NEMImportanceLogin */;
+			targetProxy = 67B3449E202F7D9B0065142C /* PBXContainerItemProxy */;
+		};
+		67B344AA202F7D9C0065142C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B34488202F7D9B0065142C /* NEMImportanceLogin */;
+			targetProxy = 67B344A9202F7D9C0065142C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67B34490202F7D9B0065142C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67B34491202F7D9B0065142C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		67B34495202F7D9B0065142C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67B34496202F7D9B0065142C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67B344AF202F7D9C0065142C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67B344B0202F7D9C0065142C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67B344B2202F7D9C0065142C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2FA9B8DC2EEC0780E0D1F6 /* Pods-NEMImportanceLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E466W5VMMF;
+				INFOPLIST_FILE = NEMImportanceLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NEMImportanceLogin.NEMImportanceLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67B344B3202F7D9C0065142C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41331D128FCDCE543A1D01E2 /* Pods-NEMImportanceLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E466W5VMMF;
+				INFOPLIST_FILE = NEMImportanceLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NEMImportanceLogin.NEMImportanceLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67B344B5202F7D9C0065142C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175D5545D74D0378FEA294DE /* Pods-NEMImportanceLoginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E466W5VMMF;
+				INFOPLIST_FILE = NEMImportanceLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NEMImportanceLogin.NEMImportanceLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEMImportanceLogin.app/NEMImportanceLogin";
+			};
+			name = Debug;
+		};
+		67B344B6202F7D9C0065142C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778CF30C03DF667ECF414CCF /* Pods-NEMImportanceLoginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E466W5VMMF;
+				INFOPLIST_FILE = NEMImportanceLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NEMImportanceLogin.NEMImportanceLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEMImportanceLogin.app/NEMImportanceLogin";
+			};
+			name = Release;
+		};
+		67B344B8202F7D9C0065142C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26028E499CB8B6E1BFD7C92C /* Pods-NEMImportanceLoginUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E466W5VMMF;
+				INFOPLIST_FILE = NEMImportanceLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NEMImportanceLogin.NEMImportanceLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NEMImportanceLogin;
+			};
+			name = Debug;
+		};
+		67B344B9202F7D9C0065142C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D6A61B4B5B3FFB36DB9B45 /* Pods-NEMImportanceLoginUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E466W5VMMF;
+				INFOPLIST_FILE = NEMImportanceLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NEMImportanceLogin.NEMImportanceLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NEMImportanceLogin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67B34484202F7D9B0065142C /* Build configuration list for PBXProject "NEMImportanceLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B344AF202F7D9C0065142C /* Debug */,
+				67B344B0202F7D9C0065142C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B344B1202F7D9C0065142C /* Build configuration list for PBXNativeTarget "NEMImportanceLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B344B2202F7D9C0065142C /* Debug */,
+				67B344B3202F7D9C0065142C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B344B4202F7D9C0065142C /* Build configuration list for PBXNativeTarget "NEMImportanceLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B344B5202F7D9C0065142C /* Debug */,
+				67B344B6202F7D9C0065142C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B344B7202F7D9C0065142C /* Build configuration list for PBXNativeTarget "NEMImportanceLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B344B8202F7D9C0065142C /* Debug */,
+				67B344B9202F7D9C0065142C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67B34481202F7D9B0065142C /* Project object */;
+}
