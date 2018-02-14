@@ -60,7 +60,19 @@ class ViewController: UIViewController {
             
         } else {
             
-            let address = self.address.text//アカウントのアドレス
+            var address = self.address.text//アカウントのアドレス
+            
+            //addressから-(ハイフン)を取り除く
+            while true {
+                //-(ハイフン)があった場合その文字を取り出しておく
+                if let range = address?.range(of: "-") {
+                    //アドレスから-を削除
+                    address?.removeSubrange(range)//replaceSubrange(range, with: "")
+                } else {
+                    break
+                }
+            }
+            
             //パラメーターを辞書で入れていく//左辺がカラム名、右辺が値
             var params: [String: Any] = [:]//左辺が文字列でカラム指定、右辺がどの値でも送れるようにAny
             params["address"] = address//アドレス"NC4C6PSUW5CLTDT5SXAGJDQJGZNESKFK5MCN77OG"//

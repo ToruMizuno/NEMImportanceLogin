@@ -30,6 +30,25 @@ class SignupProfileViewController: UIViewController {
         self.appDelegate = UIApplication.shared.delegate as! AppDelegate
         self.importance = self.appDelegate.importance
         
+        
+        //****************************************
+        //重要度の計算
+        //①重要度 * 0.001(1000分の1) = 1分間(1回)のハーベストの獲得率
+        //これから100をかけると%表示になる
+        //②1 - 重要度 * 0.001 = 1回(1分間)のハーベストを獲得できない確率
+        //③100 - (1回にハーベストを獲得できない確率 * 1440分 * 100%) = 1日にハーベストを獲得できない確率
+        //④100 - (1回にハーベストを獲得できない確率 * 1440分 * 30 * 100%) = 1ヶ月にハーベストを獲得できない確率
+        let minuteHarvesting = importance * 0.001//①
+        let noMinuteHarvesting = 1.0 - minuteHarvesting//②
+        let DayHarvesting = 100 - (noMinuteHarvesting * 1440 * 100)//③
+        let MonthHarvesting = 100 - (noMinuteHarvesting * 1440 * 30 * 100)//④
+        //****************************************
+        print("1日にハーベストを獲得できない確率は\(String(describing: DayHarvesting))")
+        print("1ヶ月にハーベストを獲得できない確率は\(String(describing: MonthHarvesting))")
+        
+        
+        
+        
         //ユーザーネーム入力欄用に最初からキーボードが打てる状態にする
         usernameTextField.becomeFirstResponder()
         
@@ -48,8 +67,9 @@ class SignupProfileViewController: UIViewController {
         if usernameTextField.text!.count < 3 {
             
             //重要度の判定
+            
             //所定の値より少なかった場合
-        } else if self.importance < 0.001 {
+        } else if self.importance < 0.1 {
             
             
         } else {
