@@ -14,12 +14,18 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         //ログインしているかを確認
         if NCMBUser.current() == nil {
-            showLogin()
+            self.showLogin()
         }
-        
+
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

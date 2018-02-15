@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         */
         //入力欄が入力されていなかった場合
         if (self.address.text?.isEmpty)! {
-            
+            print("アドレスが入力されていません")
             //何かアラートなどで警告
             
         } else {
@@ -100,11 +100,14 @@ class ViewController: UIViewController {
                     print("dictionaryValue: \(String(describing: dictionaryValue))")
                     //accountの中のimportanceのみを取り出す
                     let importance: Double = (dictionaryValue["importance"]?.doubleValue)!
-                    print("importance: \(String(describing: importance))")
+                    print("importance(重要度): \(String(describing: importance))")
                     
                     //親子関係でない画面転移
                     self.appDelegate = UIApplication.shared.delegate as! AppDelegate
                     self.appDelegate.importance = importance
+                    
+                    //データ転移する(下のfuncでデータ転移を設定する)
+                    self.performSegue(withIdentifier: "signupemail", sender: nil)
                 }
                 
             }
@@ -122,7 +125,7 @@ class ViewController: UIViewController {
         
         //入力欄が入力されていなかった場合
         if (self.address.text?.isEmpty)! {
-            
+            print("アドレスが入力されていません")
             //何かアラートなどで警告
             
         } else {
@@ -154,11 +157,14 @@ class ViewController: UIViewController {
                     print("dictionaryValue: \(String(describing: dictionaryValue))")
                     //accountの中のimportanceのみを取り出す
                     let importance: Double = (dictionaryValue["importance"]?.doubleValue)!
-                    print("importance: \(String(describing: importance))")
+                    print("importance(重要度): \(String(describing: importance))")
                     
                     //親子関係でない画面転移
                     self.appDelegate = UIApplication.shared.delegate as! AppDelegate
                     self.appDelegate.importance = importance
+                    
+                    //データ転移する(下のfuncでデータ転移を設定する)
+                    self.performSegue(withIdentifier: "loginemail", sender: nil)
                 }
                 
             }

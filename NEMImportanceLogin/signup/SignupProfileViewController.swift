@@ -4,7 +4,7 @@
 //
 //  Created by 水野徹 on 2018/02/11.
 //  Copyright © 2018年 Toru Mizuno. All rights reserved.
-//
+//  
 
 import UIKit
 import NCMB
@@ -65,12 +65,11 @@ class SignupProfileViewController: UIViewController {
         
         //ユーザーネーム入力欄の文字数が3文字以下の場合
         if usernameTextField.text!.count < 3 {
-            
+            print("3文字以下")
             //重要度の判定
-            
             //所定の値より少なかった場合
-        } else if self.importance < 0.1 {
-            
+        } else if self.importance < 0.0002 {
+            print("importanceが少なかった")
             
         } else {
             
@@ -78,13 +77,6 @@ class SignupProfileViewController: UIViewController {
             usernameTextField.resignFirstResponder()
             
             self.signUpButton.isEnabled = false
-            
-            let alert = UIAlertController(title: "処理中",
-                                          message: "",
-                                          preferredStyle: .alert)
-            
-            self.present(alert, animated: true, completion: nil)
-            self.alert = alert
             
             let newNCMBUser = NCMBUser()
             newNCMBUser.userName = self.usernameTextField.text!
@@ -95,12 +87,8 @@ class SignupProfileViewController: UIViewController {
                 //エラーが出なかった場合
                 if error == nil {
                     
-                    self.alert?.dismiss(animated: true, completion: nil)
-                    self.alert = nil
-                    
-                    //navigationcontrollerを使わずに画面転移をした時に一つ前のページ(これだと最初のtabviewcontroller、FirstViewController)に戻れる
+                    //navigationcontrollerを使わずに画面転移をした時に一つ前のページ(これだと最初のViewController)に戻れる
                     self.dismiss(animated: true, completion: nil)
-                    
                     
                 } else {
                     //エラーを表示する

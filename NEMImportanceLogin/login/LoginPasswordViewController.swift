@@ -12,11 +12,14 @@ class LoginPasswordViewController: UIViewController, UITextFieldDelegate {
     
     var username: String!//LoginEmailViewControllerからデータ転移してきたusername
     fileprivate var password: String!//パスワードを入れたり出したりできるように変数を宣言
+    var alert: UIAlertController?
     var importance: Double!
     
     //親子関係でない画面転移で使うAppDelegateのインスタンス
     var appDelegate: AppDelegate!
     
+    
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!//パスワード入力欄をコネクト
     
     override func viewDidLoad() {
@@ -42,14 +45,16 @@ class LoginPasswordViewController: UIViewController, UITextFieldDelegate {
         
         //重要度の判定
         //所定の値より少なかった場合
-        if self.importance < 0.001 {
+        if self.importance < 0.0002 {
             
-            
+            print("importanceが少なかった")
             //所定の値より多かった場合
         } else {
             
             //画面を閉じた時はじめにキーボードを閉じて画面を閉じる
             passwordTextField.resignFirstResponder()
+            
+            self.loginButton.isEnabled = false
             
             //パスワード入力欄の入力文字を格納
             password = passwordTextField.text!
@@ -59,7 +64,7 @@ class LoginPasswordViewController: UIViewController, UITextFieldDelegate {
                 //アクセスしてエラーがない時
                 if error == nil {
                     
-                    //navigationcontrollerを使わずに画面転移をした時に一つ前のページ(これだと最初のtabviewcontroller)に戻れる
+                    //navigationcontrollerを使わずに画面転移をした時に一つ前のページ(これだと最初のviewcontroller)に戻れる
                     self.dismiss(animated: true, completion: nil)
                     
                     //エラーの時

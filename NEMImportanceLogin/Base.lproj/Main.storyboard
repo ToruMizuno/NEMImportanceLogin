@@ -14,7 +14,7 @@
         <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="NEMImportanceLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" id="BYZ-38-t0r" customClass="StartViewController" customModule="NEMImportanceLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,9 +79,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="accountGet2:" destination="rhT-hR-sY1" eventType="touchUpInside" id="phW-w8-s5i"/>
-                                            <segue destination="0W2-fR-TUO" kind="show" id="9VD-E3-29W">
-                                                <nil key="action"/>
-                                            </segue>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghw-XJ-vPr">
@@ -103,9 +100,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="accountGet:" destination="rhT-hR-sY1" eventType="touchUpInside" id="o4j-xR-Yzh"/>
-                                            <segue destination="0At-ji-xtn" kind="show" identifier="ShowSignupPassword" id="jj3-S9-Qnn">
-                                                <nil key="action"/>
-                                            </segue>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -148,6 +142,8 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="address" destination="MhN-5C-FQ8" id="iIn-tP-vXA"/>
+                        <segue destination="0At-ji-xtn" kind="show" identifier="signupemail" id="9Rr-ya-Vdk"/>
+                        <segue destination="0W2-fR-TUO" kind="show" identifier="loginemail" id="fsR-Ni-AJL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emd-MN-ZkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -580,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrc-70-1qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2446" y="881"/>
+            <point key="canvasLocation" x="2446" y="880"/>
         </scene>
         <!--Login Password View Controller-->
         <scene sceneID="TIK-Un-fLj">
@@ -675,6 +671,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="g8N-ny-vKo" id="e3m-b8-rcb"/>
                         <outlet property="passwordTextField" destination="xbu-aH-bdp" id="kQQ-iX-aoc"/>
                     </connections>
                 </viewController>

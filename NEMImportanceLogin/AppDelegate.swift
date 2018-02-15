@@ -4,7 +4,11 @@
 //
 //  Created by 水野徹 on 2018/02/11.
 //  Copyright © 2018年 Toru Mizuno. All rights reserved.
-//
+
+//テスト用
+//NC4C6PSUW5CLTDT5SXAGJDQJGZNESKFK5MCN77OG//犯人
+//mmmmmmmm@gmail.com
+//mmmmmmmm
 
 import UIKit
 import NCMB
@@ -17,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var importance: Double!
     
     //********** NCMB APIキーの設定 **********
-    let applicationkey = ""//新しいアプリケーションキー
-    let clientkey = ""//新しいクライアントキー
+    let applicationkey = "5a3865a1bb6cd27692d499bc6b4cbde7d38a662dd3e48eb8291a47bfabcfb3b4"//新しいアプリケーションキー
+    let clientkey = "d5a57a576f3c3c7c1e01e4e69fa95b12c81149088c099f5e0f6932156e3e4ace"//新しいクライアントキー
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
