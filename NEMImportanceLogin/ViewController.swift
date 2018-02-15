@@ -31,28 +31,6 @@ class ViewController: UIViewController {
     //重要度を取得するためにアカウント情報を取ってくる
     @IBAction func accountGet(_ sender: Any) {
         
-        //ノードの基本情報を取得する
-        /*
-        Alamofire.request("http://176.9.68.110:7890/node/info").responseJSON { response in
-            
-            print("Request: \(String(describing: response.request))")
-            print("Response: \(String(describing: response.response))")
-            print("Error: \(String(describing: response.error))")
-            
-            //エラーがなかった場合
-            if response.error == nil {
-                
-                //responseから情報を抜き出す
-                let json:JSON = JSON(response.result.value ?? kill)
-                
-                //パラメーターを抜き出す
-                let importance: Double = json["importance"].doubleValue
-                print("importance: \(String(describing: importance))")
-                
-            }
-            
-        }
-        */
         //入力欄が入力されていなかった場合
         if (self.address.text?.isEmpty)! {
             print("アドレスが入力されていません")
@@ -75,7 +53,7 @@ class ViewController: UIViewController {
             
             //パラメーターを辞書で入れていく//左辺がカラム名、右辺が値
             var params: [String: Any] = [:]//左辺が文字列でカラム指定、右辺がどの値でも送れるようにAny
-            params["address"] = address//アドレス"NC4C6PSUW5CLTDT5SXAGJDQJGZNESKFK5MCN77OG"//
+            params["address"] = address//アドレス
             
             let node = "176.9.68.110"//基本ノード
             //let importancesurl = "http://\(node)/account/importances"//重要度の取得
@@ -133,7 +111,7 @@ class ViewController: UIViewController {
             let address = self.address.text//アカウントのアドレス
             //パラメーターを辞書で入れていく//左辺がカラム名、右辺が値
             var params: [String: Any] = [:]//左辺が文字列でカラム指定、右辺がどの値でも送れるようにAny
-            params["address"] = address//アドレス"NC4C6PSUW5CLTDT5SXAGJDQJGZNESKFK5MCN77OG"//
+            params["address"] = address//アドレス
             
             let node = "176.9.68.110"//基本ノード
             //let importancesurl = "http://\(node)/account/importances"//重要度の取得

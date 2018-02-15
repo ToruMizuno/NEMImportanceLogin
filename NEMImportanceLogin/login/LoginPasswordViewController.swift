@@ -45,7 +45,7 @@ class LoginPasswordViewController: UIViewController, UITextFieldDelegate {
         
         //重要度の判定
         //所定の値より少なかった場合
-        if self.importance < 0.0002 {
+        if self.importance < 0.1 {
             
             print("importanceが少なかった")
             //所定の値より多かった場合
