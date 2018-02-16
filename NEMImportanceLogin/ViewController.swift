@@ -56,6 +56,8 @@ class ViewController: UIViewController {
             params["address"] = address//アドレス
             
             let node = "176.9.68.110"//基本ノード
+            
+            //標準アドレスからアカウント情報を取ってくる
             //let importancesurl = "http://\(node)/account/importances"//重要度の取得
             let accountGeturl = "http://\(node):7890/account/get"//アカウントデータを取ってくる。重要度とか色々取ってくるよ//パラメータaddress
             Alamofire.request(accountGeturl, method: .get, parameters: params).responseJSON { response in
@@ -114,6 +116,8 @@ class ViewController: UIViewController {
             params["address"] = address//アドレス
             
             let node = "176.9.68.110"//基本ノード
+            
+            //標準アドレスからアカウント情報を取ってくる
             //let importancesurl = "http://\(node)/account/importances"//重要度の取得
             let accountGeturl = "http://\(node):7890/account/get"//アカウントデータを取ってくる。重要度とか色々取ってくるよ//パラメータaddress
             Alamofire.request(accountGeturl, method: .get, parameters: params).responseJSON { response in
